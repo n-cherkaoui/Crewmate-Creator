@@ -22,8 +22,8 @@ const Gallery = () => {
 
   return (
     <div className="gallery">
-      {crewmates ? (crewmates.map((crewmate) => (
-        <Card name={crewmate.name} speed={crewmate.speed} color={crewmate.color}></Card>
+      {crewmates ? (crewmates.map((crewmate, index) => (
+        <Card key={index} ident={crewmate.id} name={crewmate.name} speed={crewmate.speed} color={crewmate.color}></Card>
       ))) : null}
     </div>
   );

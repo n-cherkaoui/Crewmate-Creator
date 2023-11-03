@@ -6,13 +6,25 @@ import Customization from '../components/Customization.jsx'
 
 const EditView = () => {
     const { id } = useParams();
+    const submitButton = <input type="submit" value="Submit" />
 
-    const updatePost = async (event) => {
-        event.preventDefault();
+    const updateCrewmate = async (crewmate) => {
+        crewmate.preventDefault();
 
         await supabase
-            .from("Posts")
-            .update({ title, author, description })
+            .from("Crewmates")
+            .update({name: crewmate.target.name.value, speed: crewmate.target.speed.value, color: crewmate.target.color.value})
+            .eq("id", id);
+
+        window.location = "/";
+    };
+
+    const crewmate = async (crewmate) => {
+        crewmate.preventDefault();
+
+        await supabase
+            .from("Crewmates")
+            .update({name: crewmate.target.name.value, speed: crewmate.target.speed.value, color: crewmate.target.color.value})
             .eq("id", id);
 
         window.location = "/";
@@ -20,7 +32,7 @@ const EditView = () => {
 
     return (
         <div>
-            <Customization operation={updatePost} />
+            <Customization operation={updateCrewmate} submitElement={submitButton}/>
         </div>
     );
 };

@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route index={true} element={<App />} />
         <Route index={false} path="/create" element={<CreateView />} />
         <Route index={false} path="/gallery" element={<Gallery />} />
-        <Route index={false} path="/edit" element={<EditView />} />
+        <Route index={false} path="/edit/:id" element={<EditView />} />
         <Route path="*" element={
           <div>
             <p className="message">There's nothing here!</p>
