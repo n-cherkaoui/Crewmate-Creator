@@ -8,8 +8,8 @@ const createView = () => {
 
     // Insert the post into the database
     await supabase
-      .from('Posts')
-      .insert({title: post.target.name.value, author: post.target.speed.value, description: post.target.color.value})
+      .from('Crewmates')
+      .insert({name: post.target.name.value, speed: post.target.speed.value, color: post.target.color.value})
       .select()
 
     // Redirect to the home page
