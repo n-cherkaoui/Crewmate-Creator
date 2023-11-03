@@ -1,6 +1,7 @@
 import React from 'react';
 import './CreateView.css'
 import { supabase } from '../client'
+import Customization from '../components/Customization.jsx'
 
 const createView = () => {
   const createView = async (post) => {
@@ -18,30 +19,7 @@ const createView = () => {
 
   return (
     <div>
-      <form onSubmit={createView}>
-        <label for="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-        />
-        <br />
-
-        <label for="speed">Speed</label>
-        <input
-          type="text"
-          id="speed"
-        />
-        <br />
-
-        <label for="color">color</label>
-        <input
-          type="text"
-          id="color"
-        />
-        <br />
-
-        <input type="submit" value="Submit"/>
-      </form>
+      <Customization operation={createView}/>
     </div>
   );
 };
