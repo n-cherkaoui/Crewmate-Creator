@@ -1,4 +1,5 @@
 import { supabase } from '../client'
+import "./Customization.css"
 
 const Customization = ({operation, operation2, submitElement}) => {
 
