@@ -1,6 +1,6 @@
 import { supabase } from '../client'
 
-const Customization = ({operation}) => {
+const Customization = ({operation, submitElement}) => {
 
     return (
         <form onSubmit={operation}>
@@ -25,7 +25,7 @@ const Customization = ({operation}) => {
             />
             <br />
 
-            <input type="submit" value="Submit" />
+            {submitElement}
         </form>
     )
 }

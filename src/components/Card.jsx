@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {Link} from 'react-router-dom'
 
 const Card = ( {name, speed, color}) => {
     return (
@@ -6,7 +7,7 @@ const Card = ( {name, speed, color}) => {
             <p>Name of Crewmate: {name}</p>
             <p>Speed of Crewmate: {speed} mph</p>
             <p>Color of Crewmate: {color}</p>
-            <button>Edit Crewmate</button>
+            <Link to='/edit'><button>Edit Crewmate</button></Link>
         </div>
     )
 }

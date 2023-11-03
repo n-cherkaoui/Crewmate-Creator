@@ -4,6 +4,8 @@ import { supabase } from '../client'
 import Customization from '../components/Customization.jsx'
 
 const createView = () => {
+  const submitButton = <input type="submit" value="Submit" />
+
   const createView = async (post) => {
     post.preventDefault();
 
@@ -19,7 +21,7 @@ const createView = () => {
 
   return (
     <div>
-      <Customization operation={createView}/>
+      <Customization operation={createView} submitElement={submitButton}/>
     </div>
   );
 };
