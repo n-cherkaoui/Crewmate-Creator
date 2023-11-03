@@ -1,4 +1,15 @@
-label {
-    padding: 100px;
-    background-color: gray;
+.inputBox {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+    background-color: #a2a1a180;
+}
+
+.inputBoxes {
+    display: flex;
+    margin-bottom: 20px;
 }

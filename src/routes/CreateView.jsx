@@ -4,10 +4,11 @@ import { supabase } from '../client'
 import Customization from '../components/Customization.jsx'
 
 const createView = () => {
-  const submitButton = <input type="submit" value="Submit" />
+  const submitButton = <button type="submit">Create Crewmate</button>
 
   const createView = async (post) => {
     post.preventDefault();
+    console.log(post.target.name.value)
 
     // Insert the post into the database
     await supabase
@@ -21,6 +22,8 @@ const createView = () => {
 
   return (
     <div>
+      <h1>Create a new crewmate!</h1>
+      <img src="../src/assets/images/crewmates.png"></img>
       <Customization operation={createView} submitElement={submitButton}/>
     </div>
   );

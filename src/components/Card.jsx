@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import {Link} from 'react-router-dom'
+import "./Card.css"
 
 const Card = ( {ident, name, speed, color} ) => {
     return (
