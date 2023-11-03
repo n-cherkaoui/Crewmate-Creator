@@ -7,6 +7,7 @@ import CreateView from "./routes/CreateView.jsx"
 import SideNav from './routes/SideNav.jsx';
 import Gallery from './routes/Gallery.jsx';
 import EditView from './routes/EditView.jsx';
+import DetailView from './routes/DetailView.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route index={false} path="/create" element={<CreateView />} />
         <Route index={false} path="/gallery" element={<Gallery />} />
         <Route index={false} path="/edit/:id" element={<EditView />} />
+        <Route index={false} path="/:id" element={<DetailView />} />
         <Route path="*" element={
           <div>
             <p className="message">There's nothing here!</p>
