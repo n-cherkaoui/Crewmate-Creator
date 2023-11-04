@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='Crewmate.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3o5bnF5Y2diOTRoaGp6eGRjNDE5NTMxcG9oYzB4Z2VjbnZta2F6MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/e2z6Zqga2w5v1ng88b/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with Giphy
