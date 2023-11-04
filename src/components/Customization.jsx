@@ -7,7 +7,7 @@ const Customization = ({operation, operation2, submitElement}) => {
         <form onSubmit={operation}>
             <div className="inputBoxes">
             <div className="inputBox">
-            <label for="name">Name:</label>
+            <label for="name"><h3>Name:</h3></label>
             <input
                 type="text"
                 id="name"
@@ -17,7 +17,7 @@ const Customization = ({operation, operation2, submitElement}) => {
             {/* <br /> */}
 
             <div className="inputBox">
-            <label for="speed">Speed</label>
+            <label for="speed"><h3>Speed:</h3></label>
             <input
                 type="text"
                 id="speed"
@@ -27,12 +27,31 @@ const Customization = ({operation, operation2, submitElement}) => {
             {/* <br /> */}
 
             <div className="inputBox">
-            <label for="color">Color</label>
-            <input
-                type="text"
-                id="color"
-                placeholder="Enter Crewmate color"
-            />
+            <label for="color"><h3>Color:</h3></label>
+            <li>
+                <input id="Red" name="color" type="radio" value="Red"></input>
+                Red
+            </li>
+            <li>
+                <input id="Red" name="color" type="radio" value="Green"></input>
+                Green
+            </li>
+            <li>
+                <input id="Red" name="color" type="radio" value="Blue"></input>
+                Blue
+            </li>
+            <li>
+                <input id="Red" name="color" type="radio" value="Purple"></input>
+                Purple
+            </li>
+            <li>
+                <input id="Red" name="color" type="radio" value="Yellow"></input>
+                Yellow
+            </li>
+            <li>
+                <input id="Red" name="color" type="radio" value="Orange"></input>
+                Orange
+            </li>
             </div>
             </div>
 

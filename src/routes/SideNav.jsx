@@ -6,13 +6,13 @@ const SideNav = () => {
   return (
     <div className="wholeSite">
       <div className="sideNav">
-          <Link className="homeButton" to="/">
+          <Link className="navButton" to="/">
               Home
           </Link>
-          <Link className="createButton" to="/create">
+          <Link className="navButton" to="/create">
               Create a Crewmate!
           </Link>
-          <Link className="galleryButton" to="/gallery">
+          <Link className="navButton" to="/gallery">
               Crewmate Gallery
           </Link>
       </div>

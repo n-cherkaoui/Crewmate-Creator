@@ -11,28 +11,29 @@ const EditView = () => {
         crewmate.preventDefault();
         await supabase
             .from("Crewmates")
-            .update({name: crewmate.target.name.value, speed: crewmate.target.speed.value, color: crewmate.target.color.value})
+            .update({ name: crewmate.target.name.value, speed: crewmate.target.speed.value, color: crewmate.target.color.value })
             .eq("id", id);
 
-        window.location = "/";
+        window.location = "/gallery";
     };
 
     const deleteCrewmate = async (crewmate) => {
         crewmate.preventDefault();
-    
+
         await supabase
-        .from('Crewmates')
-        .delete()
-        .eq('id', id); 
-    
-        window.location = "/";
+            .from('Crewmates')
+            .delete()
+            .eq('id', id);
+
+        window.location = "/gallery";
     };
 
     const submitButton = <div className="buttons"><button type="submit">Update Crewmate</button><button onClick={deleteCrewmate}>Delete Crewmate</button></div>;
 
     return (
         <div>
-            <Customization operation={updateCrewmate} operation2={deleteCrewmate} submitElement={submitButton}/>
+            <img src="../src/assets/images/crewmates.png"></img>
+            <Customization operation={updateCrewmate} operation2={deleteCrewmate} submitElement={submitButton} />
         </div>
     );
 };

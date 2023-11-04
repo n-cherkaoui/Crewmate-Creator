@@ -13,3 +13,8 @@
     display: flex;
     margin-bottom: 20px;
 }
+
+li {
+    list-style: none;
+    text-align: left;
+}
